@@ -1,4 +1,4 @@
-package fr.diginamic.factory.entites;
+package fr.diginamic.entites;
 
 public class Allergene extends Element {
 
