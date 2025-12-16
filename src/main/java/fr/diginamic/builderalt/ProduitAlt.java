@@ -41,9 +41,9 @@ public class ProduitAlt {
     public String getGrade() { return grade; }
     public Categorie getCategorie() { return categorie; }
     public Marque getMarque() { return marque; }
-    public Set<Ingredient> getIngredients() { return ingredients; }
-    public Set<Allergene> getAllergenes() { return allergenes; }
-    public Set<Additif> getAdditifs() { return additifs; }
+    public Set<Ingredient> getIngredients() { return Set.copyOf(ingredients); }
+    public Set<Allergene> getAllergenes() { return Set.copyOf(allergenes); }
+    public Set<Additif> getAdditifs() { return Set.copyOf(additifs); }
 
     public static ProduitBuilderAlt builder() { return new ProduitBuilderAlt(); }
 
